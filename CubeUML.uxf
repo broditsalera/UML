@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text/>
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>476</x>
+      <y>70</y>
+      <w>182</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>Cube
+--
+-facets: Facet[]
+--
++Cube(): Facet[]
++rotate(double ux, double uy, double uz)
++scale(double k)
++translate(double x, double y, double z)
++draw(Graphics2D g)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>56</x>
+      <y>70</y>
+      <w>357</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Facet
+--
+-vertex: R3Vector[]
+-color: Color
+-int i = 0
+--
++Facet(R3Vector v1, R3Vector v2, R3Vector v3, R3Vector v4, Color color)
++out()
++rotate(double ux, double uy, double uz)
++scale(double k)
++translate(double x, double y, double z)
++draw(Graphics2D g)
++normal()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>406</x>
+      <y>112</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+6          1</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>84</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Viewer
+--
+-cube: Cube
+--
++Viewer(int width, int height, Cube cube)
++paint(Graphics g)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>679</x>
+      <y>140</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;170.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>658</x>
+      <y>259</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>JFrame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>287</x>
+      <y>287</y>
+      <w>252</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes>R3Vector
+--
+-x: double
+-y: double
+-z: double
+--
++R3Vector(double x, double y, double z)
++out()
++sum(R3Vector a): R3Vector
++minus(R3Vector a, R3Vector b): R3Vector
++scale(double k, R3Vector b): R3Vector
++translate (double x, double y, double z): R3Vector
++scalar(R3Vector a, R3Vector b): double
++vetor(R3Vector a, R3Vector b): R3Vector
++rotateX(double u): R3Vector
++rotateY(double u): R3Vector
++rotateZ(double u): R3Vector
++rotate(double u_x, double u_y, double u_z): R3Vector
++GetX(): double
++GetY(): double
++GetZ(): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>245</x>
+      <y>203</y>
+      <w>182</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+1                                                          
+
+
+                             4</panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>651</x>
+      <y>105</y>
+      <w>77</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+*           1</panel_attributes>
+    <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>

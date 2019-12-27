@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>70</y>
+      <w>147</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Bird
+--
+#int x = 15
+#int y = 15
+#int size = 15
+#color: Color = Color.red
+
+--
++Bird()
++fly()
++draw(Graphics g)
++printtime()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>462</x>
+      <y>70</y>
+      <w>147</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Macaw
+--
++name: String = "Кеша"
+-int num = 0
+--
++Macaw()
++speak()
++setName(String name)
++getName()
++dialog(Macaw name)
++dialog(Penguin name)
++answer(Macaw name)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>357</x>
+      <y>126</y>
+      <w>119</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>77</x>
+      <y>91</y>
+      <w>63</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Penguin
+--
++Penguin()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>77</x>
+      <y>140</y>
+      <w>63</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Sparrow
+--
++Sparrow()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>133</x>
+      <y>147</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>133</x>
+      <y>105</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>266</y>
+      <w>217</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>Flock
+--
++f: ArrayLost&lt;Bird&gt;
+--
++Flock()
++fly()
++draw(Graphics g)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>574</x>
+      <y>266</y>
+      <w>112</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+                        
+*                        1   </panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>175</y>
+      <w>140</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>MyFrame
+--
+-f: Frame
+--
++MyFrame(Flock f)
++paint(Graphics g)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>749</x>
+      <y>294</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>735</x>
+      <y>357</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>JFrame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>182</y>
+      <w>98</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+1..*           0..1
+
+                </panel_attributes>
+    <additional_attributes>120.0;190.0;10.0;190.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
